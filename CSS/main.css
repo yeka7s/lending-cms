@@ -1,0 +1,206 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --color-1: #0f1c48;
+  --color-2: #112c71;
+  --color-3: #56e1e9;
+  --color-4: #fbfeff;
+  --color-5: #3b60db;
+  --color-6: #bb63ff;
+  --slayder: rgba(15, 28, 72, 0.5);
+  --forma-zayavki: #f7f7fd;
+  --cvet-menyu: #cde5fa;
+  --color-7: rgba(91, 88, 235, 0.08);
+  --color-8: #5b58eb;
+}
+
+:root {
+  --font-family: "Raleway", sans-serif;
+  --second-family: "Actay Wide", sans-serif;
+  --third-family: "Nunito", sans-serif;
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("fonts/Nunito-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ActayWide-Bold";
+  src: url("fonts/ActayWide-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Railway-Regular";
+  src: url("fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Railway-Bold";
+  src: url("fonts/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Railway-SemiBold";
+  src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+body {
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-1);
+  background: #fcfcfc;
+}
+
+.container {
+  padding-left: calc(50% - 960px);
+  padding-right: calc(50% - 960px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav--link {
+  font-size: 20px;
+  line-height: 70%;
+  color: #38393a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav--link:not(:last-child) {
+  margin-right: 14px;
+}
+.header__nav--icon {
+  margin-left: 8px;
+}
+.header__buttons {
+  display: flex;
+  gap: 10px;
+}
+.header__button {
+  display: block;
+  border-radius: 32px;
+  padding: 16px 30px;
+  height: 48px;
+  text-align: center;
+  line-height: 89%;
+  font-weight: 600;
+  font-size: 18px;
+}
+.header__button--light {
+  width: 152px;
+  background: #fbfeff;
+  border: 1px solid #2a4fca;
+  color: #1f3b84;
+}
+.header__button--dark {
+  width: 210px;
+  background: #2a4fca;
+  color: #fbfeff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__img {
+  margin-left: 40px;
+}
+.logo__text {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 62%;
+  text-align: center;
+  color: #1e47ae;
+  margin-left: 10px;
+}/*# sourceMappingURL=main.css.map */
